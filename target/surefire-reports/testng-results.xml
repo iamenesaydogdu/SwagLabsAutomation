@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-27T12:58:20 EDT" name="SwagLabs Automation Suite" finished-at="2025-05-27T12:59:36 EDT" duration-ms="76039">
+    <groups>
+    </groups>
+    <test started-at="2025-05-27T12:58:20 EDT" name="Full Regression Test" finished-at="2025-05-27T12:59:36 EDT" duration-ms="76039">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@4ac3c60d]" started-at="2025-05-27T12:58:20 EDT" name="setUp" finished-at="2025-05-27T12:58:26 EDT" duration-ms="5938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@4ac3c60d]" started-at="2025-05-27T12:58:26 EDT" name="loginTest" data-provider="loginData" finished-at="2025-05-27T12:58:27 EDT" duration-ms="994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4ac3c60d]" started-at="2025-05-27T12:58:27 EDT" name="tearDown" finished-at="2025-05-27T12:58:29 EDT" duration-ms="2277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@4ac3c60d]" started-at="2025-05-27T12:58:29 EDT" name="setUp" finished-at="2025-05-27T12:58:35 EDT" duration-ms="5535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@4ac3c60d]" started-at="2025-05-27T12:58:35 EDT" name="loginTest" data-provider="loginData" finished-at="2025-05-27T12:58:35 EDT" duration-ms="915" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4ac3c60d]" started-at="2025-05-27T12:58:35 EDT" name="tearDown" finished-at="2025-05-27T12:58:37 EDT" duration-ms="1733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@4ac3c60d]" started-at="2025-05-27T12:58:37 EDT" name="setUp" finished-at="2025-05-27T12:58:43 EDT" duration-ms="5763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:tests.LoginTest@4ac3c60d]" started-at="2025-05-27T12:58:43 EDT" name="loginTest" data-provider="loginData" finished-at="2025-05-27T12:58:44 EDT" duration-ms="776" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@4ac3c60d]" started-at="2025-05-27T12:58:44 EDT" name="tearDown" finished-at="2025-05-27T12:58:46 EDT" duration-ms="1861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.AddToCartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AddToCartTest@402bba4f]" started-at="2025-05-27T12:58:46 EDT" name="setup" finished-at="2025-05-27T12:58:51 EDT" duration-ms="5201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddToCart()[pri:0, instance:tests.AddToCartTest@402bba4f]" started-at="2025-05-27T12:58:51 EDT" name="testAddToCart" finished-at="2025-05-27T12:59:09 EDT" duration-ms="18101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AddToCartTest@402bba4f]" started-at="2025-05-27T12:59:09 EDT" name="teardown" finished-at="2025-05-27T12:59:10 EDT" duration-ms="1348" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.AddToCartTest -->
+      <class name="tests.CheckoutValidationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.CheckoutValidationTest@795cd85e]" started-at="2025-05-27T12:59:10 EDT" name="setup" finished-at="2025-05-27T12:59:15 EDT" duration-ms="4284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testEmptyCheckoutForm()[pri:0, instance:tests.CheckoutValidationTest@795cd85e]" started-at="2025-05-27T12:59:15 EDT" name="testEmptyCheckoutForm" finished-at="2025-05-27T12:59:35 EDT" duration-ms="20018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCheckoutForm -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.CheckoutValidationTest@795cd85e]" started-at="2025-05-27T12:59:35 EDT" name="teardown" finished-at="2025-05-27T12:59:36 EDT" duration-ms="1244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- tests.CheckoutValidationTest -->
+    </test> <!-- Full Regression Test -->
+  </suite> <!-- SwagLabs Automation Suite -->
+</testng-results>
