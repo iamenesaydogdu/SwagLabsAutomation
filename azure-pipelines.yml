@@ -1,0 +1,17 @@
+trigger:
+  - main  # hangi branch push olduğunda çalışsın diyorsan bunu değiştir
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'clean test'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      jdkArchitectureOption: 'x64'
+      publishJUnitResults: true
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      options: '-B'
