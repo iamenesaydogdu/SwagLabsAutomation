@@ -8,6 +8,11 @@ utils\ExtentReportManager.class
 utils\ConfigReader.class
 tests\LoginTest.class
 tests\CheckoutValidationTest.class
+tests\CompleteOrderTest.class
 utils\BasePage.class
 utils\PopupHandler.class
+tests\CheckoutDataDrivenTest.class
 pages\CheckoutPage.class
+utils\ExcelUtil.class
+tests\InvalidCheckoutFormTest.class
+utils\ScreenshotUtil.class

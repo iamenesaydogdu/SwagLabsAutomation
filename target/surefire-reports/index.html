@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SwagLabs_Automation_Suite" class="navigator-link">
-              <span class="suite-name border-passed">SwagLabs Automation Suite</span>
+              <span class="suite-name border-failed">SwagLabs Automation Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SwagLabs_Automation_Suite" class="hide-methods failed suite-SwagLabs_Automation_Suite"> (hide)</a> <!-- hide-methods failed suite-SwagLabs_Automation_Suite -->
+                      <a href="#" panel-name="suite-SwagLabs_Automation_Suite" class="show-methods failed suite-SwagLabs_Automation_Suite"> (show)</a> <!-- show-methods failed suite-SwagLabs_Automation_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-SwagLabs_Automation_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.InvalidCheckoutFormTest" class="method navigator-link" hash-for-method="invalidCheckoutTest(Enes, Aydogdu, abcd)">invalidCheckoutTest(Enes, Aydogdu, abcd)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SwagLabs_Automation_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,52 @@
                     <div class="method-list-content passed suite-SwagLabs_Automation_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginTest(locked_out_user, secret_sauce)">loginTest(locked_out_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.CheckoutDataDrivenTest" class="method navigator-link" hash-for-method="checkoutFormTest(John, Smith, 98765.0)">checkoutFormTest(John, Smith, 98765.0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginTest(standard_user, secret_sauce)">loginTest(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.CheckoutDataDrivenTest" class="method navigator-link" hash-for-method="checkoutFormTest(Alice, Brown, 54321.0)">checkoutFormTest(Alice, Brown, 54321.0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginTest(problem_user, secret_sauce)">loginTest(problem_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.CheckoutDataDrivenTest" class="method navigator-link" hash-for-method="checkoutFormTest(Enes, Aydogdu, M6M2S5)">checkoutFormTest(Enes, Aydogdu, M6M2S5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.InvalidCheckoutFormTest" class="method navigator-link" hash-for-method="invalidCheckoutTest(Enes, Aydogdu, )">invalidCheckoutTest(Enes, Aydogdu, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.InvalidCheckoutFormTest" class="method navigator-link" hash-for-method="invalidCheckoutTest(, Test, 12345.0)">invalidCheckoutTest(, Test, 12345.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.InvalidCheckoutFormTest" class="method navigator-link" hash-for-method="invalidCheckoutTest(, Aydogdu, M6M2S5)">invalidCheckoutTest(, Aydogdu, M6M2S5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.InvalidCheckoutFormTest" class="method navigator-link" hash-for-method="invalidCheckoutTest(Enes, , M6M2S5)">invalidCheckoutTest(Enes, , M6M2S5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginTest(problem_user, secret_sauce, success)">loginTest(problem_user, secret_sauce, success)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginTest(standard_user, secret_sauce, success)">loginTest(standard_user, secret_sauce, success)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SwagLabs_Automation_Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginTest(locked_out_user, secret_sauce, fail)">loginTest(locked_out_user, secret_sauce, fail)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,21 +187,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SwagLabs_Automation_Suite" class="panel SwagLabs_Automation_Suite">
-          <div class="suite-SwagLabs_Automation_Suite-class-passed">
+          <div class="suite-SwagLabs_Automation_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.AddToCartTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">tests.InvalidCheckoutFormTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testAddToCart">
-                  </a> <!-- testAddToCart -->
-                  <span class="method-name">testAddToCart</span>
+                  <a name="invalidCheckoutTest(Enes, Aydogdu, abcd)">
+                  </a> <!-- invalidCheckoutTest(Enes, Aydogdu, abcd) -->
+                  <span class="method-name">invalidCheckoutTest</span>
+                  <span class="parameters">(Enes,Aydogdu,abcd)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected an error message but none was found did not expect [No error message found] but found [No error message found]
+	at tests.InvalidCheckoutFormTest.invalidCheckoutTest(InvalidCheckoutFormTest.java:56)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-SwagLabs_Automation_Suite-class-passed -->
+          </div> <!-- suite-SwagLabs_Automation_Suite-class-failed -->
           <div class="suite-SwagLabs_Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -171,31 +226,118 @@
           <div class="suite-SwagLabs_Automation_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">tests.InvalidCheckoutFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCheckoutTest(Enes, Aydogdu, )">
+                  </a> <!-- invalidCheckoutTest(Enes, Aydogdu, ) -->
+                  <span class="method-name">invalidCheckoutTest</span>
+                  <span class="parameters">(Enes,Aydogdu,)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCheckoutTest(, Test, 12345.0)">
+                  </a> <!-- invalidCheckoutTest(, Test, 12345.0) -->
+                  <span class="method-name">invalidCheckoutTest</span>
+                  <span class="parameters">(,Test,12345.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCheckoutTest(, Aydogdu, M6M2S5)">
+                  </a> <!-- invalidCheckoutTest(, Aydogdu, M6M2S5) -->
+                  <span class="method-name">invalidCheckoutTest</span>
+                  <span class="parameters">(,Aydogdu,M6M2S5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidCheckoutTest(Enes, , M6M2S5)">
+                  </a> <!-- invalidCheckoutTest(Enes, , M6M2S5) -->
+                  <span class="method-name">invalidCheckoutTest</span>
+                  <span class="parameters">(Enes,,M6M2S5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SwagLabs_Automation_Suite-class-passed -->
+          <div class="suite-SwagLabs_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.CheckoutDataDrivenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutFormTest(John, Smith, 98765.0)">
+                  </a> <!-- checkoutFormTest(John, Smith, 98765.0) -->
+                  <span class="method-name">checkoutFormTest</span>
+                  <span class="parameters">(John,Smith,98765.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutFormTest(Alice, Brown, 54321.0)">
+                  </a> <!-- checkoutFormTest(Alice, Brown, 54321.0) -->
+                  <span class="method-name">checkoutFormTest</span>
+                  <span class="parameters">(Alice,Brown,54321.0)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkoutFormTest(Enes, Aydogdu, M6M2S5)">
+                  </a> <!-- checkoutFormTest(Enes, Aydogdu, M6M2S5) -->
+                  <span class="method-name">checkoutFormTest</span>
+                  <span class="parameters">(Enes,Aydogdu,M6M2S5)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SwagLabs_Automation_Suite-class-passed -->
+          <div class="suite-SwagLabs_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(locked_out_user, secret_sauce)">
-                  </a> <!-- loginTest(locked_out_user, secret_sauce) -->
+                  <a name="loginTest(problem_user, secret_sauce, success)">
+                  </a> <!-- loginTest(problem_user, secret_sauce, success) -->
                   <span class="method-name">loginTest</span>
-                  <span class="parameters">(locked_out_user,secret_sauce)</span>
+                  <span class="parameters">(problem_user,secret_sauce,success)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(standard_user, secret_sauce)">
-                  </a> <!-- loginTest(standard_user, secret_sauce) -->
+                  <a name="loginTest(standard_user, secret_sauce, success)">
+                  </a> <!-- loginTest(standard_user, secret_sauce, success) -->
                   <span class="method-name">loginTest</span>
-                  <span class="parameters">(standard_user,secret_sauce)</span>
+                  <span class="parameters">(standard_user,secret_sauce,success)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(problem_user, secret_sauce)">
-                  </a> <!-- loginTest(problem_user, secret_sauce) -->
+                  <a name="loginTest(locked_out_user, secret_sauce, fail)">
+                  </a> <!-- loginTest(locked_out_user, secret_sauce, fail) -->
                   <span class="method-name">loginTest</span>
-                  <span class="parameters">(problem_user,secret_sauce)</span>
+                  <span class="parameters">(locked_out_user,secret_sauce,fail)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SwagLabs_Automation_Suite-class-passed -->
+          <div class="suite-SwagLabs_Automation_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AddToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddToCart">
+                  </a> <!-- testAddToCart -->
+                  <span class="method-name">testAddToCart</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -218,6 +360,8 @@
       &lt;class name=&quot;tests.LoginTest&quot;/&gt;
       &lt;class name=&quot;tests.AddToCartTest&quot;/&gt;
       &lt;class name=&quot;tests.CheckoutValidationTest&quot;/&gt;
+      &lt;class name=&quot;tests.CheckoutDataDrivenTest&quot;/&gt;
+      &lt;class name=&quot;tests.InvalidCheckoutFormTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Full Regression Test --&gt;
 &lt;/suite&gt; &lt;!-- SwagLabs Automation Suite --&gt;
@@ -231,7 +375,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Full Regression Test (3 classes)</span>
+                <span class="test-name">Full Regression Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -257,32 +401,64 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(13);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testEmptyCheckoutForm')
 data.setCell(0, 2, 'tests.CheckoutValidationTest')
-data.setCell(0, 3, 20018);
+data.setCell(0, 3, 20302);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testAddToCart')
-data.setCell(1, 2, 'tests.AddToCartTest')
-data.setCell(1, 3, 18101);
+data.setCell(1, 1, 'invalidCheckoutTest')
+data.setCell(1, 2, 'tests.InvalidCheckoutFormTest')
+data.setCell(1, 3, 19158);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest')
-data.setCell(2, 2, 'tests.LoginTest')
-data.setCell(2, 3, 994);
+data.setCell(2, 1, 'checkoutFormTest')
+data.setCell(2, 2, 'tests.CheckoutDataDrivenTest')
+data.setCell(2, 3, 19089);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'loginTest')
-data.setCell(3, 2, 'tests.LoginTest')
-data.setCell(3, 3, 915);
+data.setCell(3, 1, 'checkoutFormTest')
+data.setCell(3, 2, 'tests.CheckoutDataDrivenTest')
+data.setCell(3, 3, 18944);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'loginTest')
-data.setCell(4, 2, 'tests.LoginTest')
-data.setCell(4, 3, 776);
+data.setCell(4, 1, 'invalidCheckoutTest')
+data.setCell(4, 2, 'tests.InvalidCheckoutFormTest')
+data.setCell(4, 3, 18943);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkoutFormTest')
+data.setCell(5, 2, 'tests.CheckoutDataDrivenTest')
+data.setCell(5, 3, 18838);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invalidCheckoutTest')
+data.setCell(6, 2, 'tests.InvalidCheckoutFormTest')
+data.setCell(6, 3, 18642);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invalidCheckoutTest')
+data.setCell(7, 2, 'tests.InvalidCheckoutFormTest')
+data.setCell(7, 3, 18616);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invalidCheckoutTest')
+data.setCell(8, 2, 'tests.InvalidCheckoutFormTest')
+data.setCell(8, 3, 18562);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testAddToCart')
+data.setCell(9, 2, 'tests.AddToCartTest')
+data.setCell(9, 3, 18289);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginTest')
+data.setCell(10, 2, 'tests.LoginTest')
+data.setCell(10, 3, 1205);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'loginTest')
+data.setCell(11, 2, 'tests.LoginTest')
+data.setCell(11, 3, 1043);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'loginTest')
+data.setCell(12, 2, 'tests.LoginTest')
+data.setCell(12, 3, 840);
 window.suiteTableData['SwagLabs_Automation_Suite']= { tableData: data, tableDiv: 'times-div-SwagLabs_Automation_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-SwagLabs_Automation_Suite">
               </div> <!-- times-div-SwagLabs_Automation_Suite -->
             </div> <!-- times-div -->
@@ -314,66 +490,170 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest(standard_user, secret_sauce)</span>
-                <span class="method-start">5940 ms</span>
+                <span class="method-name">loginTest(standard_user, secret_sauce, success)</span>
+                <span class="method-start">10282 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6938 ms</span>
+                <span class="method-start">11487 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9216 ms</span>
+                <span class="method-start">15506 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest(locked_out_user, secret_sauce)</span>
-                <span class="method-start">14751 ms</span>
+                <span class="method-name">loginTest(locked_out_user, secret_sauce, fail)</span>
+                <span class="method-start">24203 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">15667 ms</span>
+                <span class="method-start">25045 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">17401 ms</span>
+                <span class="method-start">27667 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">loginTest(problem_user, secret_sauce)</span>
-                <span class="method-start">23166 ms</span>
+                <span class="method-name">loginTest(problem_user, secret_sauce, success)</span>
+                <span class="method-start">35788 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23942 ms</span>
+                <span class="method-start">36832 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">25803 ms</span>
+                <span class="method-start">39768 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAddToCart</span>
-                <span class="method-start">31004 ms</span>
+                <span class="method-start">49757 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">49105 ms</span>
+                <span class="method-start">68048 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.CheckoutValidationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">50454 ms</span>
+                <span class="method-start">71483 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testEmptyCheckoutForm</span>
-                <span class="method-start">54738 ms</span>
+                <span class="method-start">80333 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">74756 ms</span>
+                <span class="method-start">100635 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckoutDataDrivenTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">104037 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkoutFormTest(Enes, Aydogdu, M6M2S5)</span>
+                <span class="method-start">113290 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">132379 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">136315 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkoutFormTest(John, Smith, 98765.0)</span>
+                <span class="method-start">144770 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">163608 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">168228 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkoutFormTest(Alice, Brown, 54321.0)</span>
+                <span class="method-start">178482 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">197428 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.InvalidCheckoutFormTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">200404 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidCheckoutTest(, Aydogdu, M6M2S5)</span>
+                <span class="method-start">209679 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">228837 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">231830 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidCheckoutTest(Enes, , M6M2S5)</span>
+                <span class="method-start">240793 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">259743 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">262378 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidCheckoutTest(Enes, Aydogdu, )</span>
+                <span class="method-start">270197 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">288759 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">291514 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidCheckoutTest(, Test, 12345.0)</span>
+                <span class="method-start">300772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">319414 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">322130 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidCheckoutTest(Enes, Aydogdu, abcd)</span>
+                <span class="method-start">331565 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">350387 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

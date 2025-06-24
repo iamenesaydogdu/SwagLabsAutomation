@@ -4,10 +4,15 @@ C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\pages\ProductPage.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\utils\PopupHandler.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\utils\ConfigReader.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\utils\ExtentReportManager.java
+C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\utils\ScreenshotUtil.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\tests\AddToCartTest.java
+C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\tests\CompleteOrderTest.java
+C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\tests\InvalidCheckoutFormTest.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\pages\CartPage.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\pages\CheckoutPage.java
+C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\tests\CheckoutDataDrivenTest.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\utils\TestListener.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\tests\CheckoutValidationTest.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\utils\DriverFactory.java
 C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\tests\LoginTest.java
+C:\Users\Enes\Desktop\SwagLabsProject\src\test\java\utils\ExcelUtil.java
