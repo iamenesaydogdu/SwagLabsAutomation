@@ -1,0 +1,23 @@
+# Trigger on main branch
+trigger:
+- main
+
+# Use latest Ubuntu image for the agent
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  # 1️⃣ Use correct Java version
+  - task: UseJavaVersion@1
+    inputs:
+      versionSpec: '11'
+      architecture: 'x64'   # <-- jdkArchitecture yerine architecture
+
+  # 2️⃣ Run Maven commands
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'clean test'
+      options: '-B'
+      publishJUnitResults: true
+      testResultsFiles: '**/surefire-reports/*.xml'
