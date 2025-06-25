@@ -1,0 +1,23 @@
+# Trigger on main branch
+trigger:
+- main
+
+# Pool image
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  # 1️⃣ Use the correct Java version
+  - task: UseJavaVersion@1
+    inputs:
+      versionSpec: '11'
+      jdkSourceOption: 'PreInstalled'  # Bu önemli!
+  
+  # 2️⃣ Run Maven commands
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'clean test'
+      options: '-B'
+      publishJUnitResults: true
+      testResultsFiles: '**/surefire-reports/*.xml'
