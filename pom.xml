@@ -1,11 +1,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.swaglabs</groupId>
     <artifactId>SwagLabsAutomation</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
     <dependencies>
         <!-- Selenium WebDriver -->
@@ -16,11 +23,7 @@
         </dependency>
 
         <!-- Selenium DevTools -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-devtools-v124</artifactId>
-            <version>4.20.0</version>
-        </dependency>
+
 
         <!-- TestNG -->
         <dependency>
@@ -37,7 +40,7 @@
             <version>4.1.7</version>
         </dependency>
 
-        <!-- Apache POI (Excel) -->
+        <!-- Apache POI (Excel support) -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -49,7 +52,7 @@
             <version>5.2.3</version>
         </dependency>
 
-        <!-- SLF4J + Log4j logging fix -->
+        <!-- Logging: SLF4J + Log4j2 -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -70,7 +73,6 @@
             <artifactId>log4j-api</artifactId>
             <version>2.22.0</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -81,8 +83,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.1</version>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
                 </configuration>
             </plugin>
 
@@ -95,8 +97,11 @@
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
+                    <!-- Show full stacktrace for failed tests -->
+                    <testFailureIgnore>false</testFailureIgnore>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 </project>
