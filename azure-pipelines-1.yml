@@ -1,0 +1,31 @@
+# Azure Pipeline for Maven project
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  MAVEN_OPTS: '-Xmx3072m'
+
+steps:
+  # Checkout code
+  - checkout: self
+
+  # Use Java 11
+  - task: JavaToolInstaller@0
+    inputs:
+      versionSpec: '11'
+      jdkArchitectureOption: 'x64'
+
+  # Maven build and test
+  - task: Maven@3
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'clean test'
+      options: '-B'
+      publishJUnitResults: true
+      testResultsFiles: '**/surefire-reports/TEST-*.xml'
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+      mavenOptions: '-Xmx3072m'
